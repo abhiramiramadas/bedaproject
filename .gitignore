@@ -1,0 +1,99 @@
+# ==========================================================
+# Git Ignore File - AI Accident Detection System
+# ==========================================================
+
+# Configuration & Secrets (NEVER COMMIT THESE!)
+config.py
+.env
+*.env
+secrets.py
+api_keys.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+logs.txt
+
+# Uploads & Output Files
+uploads/
+output/
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Test files (keep test videos in separate location)
+testing*.mp4
+testing*.jpg
+Simulation*.mp4
+
+# Model files (large files - download separately)
+# models/*.pt
+# Uncomment above if you don't want to track model files
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# Profiling
+*.prof
