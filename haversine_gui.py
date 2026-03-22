@@ -756,5 +756,9 @@ def main():
     root.mainloop()
 
 
+# Alias so main.py can import as HaversineGUI
+HaversineGUI = AccidentDetectionGUI
+
+
 if __name__ == "__main__":
     main()

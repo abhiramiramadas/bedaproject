@@ -67,6 +67,7 @@ class AudioAlertSystem:
         
         def _play():
             try:
+                import time as _t
                 if severity == "CRITICAL":
                     # Critical: Long continuous alarm
                     for _ in range(5):
@@ -76,12 +77,12 @@ class AudioAlertSystem:
                     # High: Rapid beeps
                     for _ in range(4):
                         winsound.Beep(800, 200)
-                        winsound.Beep(0, 100)
+                        _t.sleep(0.1)  # Pause between beeps
                 elif severity == "MEDIUM":
                     # Medium: Standard alert
                     for _ in range(3):
                         winsound.Beep(700, 300)
-                        winsound.Beep(0, 200)
+                        _t.sleep(0.2)  # Pause between beeps
                 else:
                     # Low: Single notification
                     winsound.Beep(500, 500)

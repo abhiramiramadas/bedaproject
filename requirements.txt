@@ -15,6 +15,17 @@ flask-cors>=4.0.0           # Cross-origin support
 psutil>=5.9.0               # System memory detection
 requests>=2.31.0            # HTTP requests for APIs
 
+# Report Generation
+reportlab>=4.0.0            # PDF report generation
+openpyxl>=3.1.0             # Excel export
+Pillow>=10.0.0              # Image processing for reports
+
+# Mapping & Visualization
+folium>=0.15.0              # Interactive map generation
+
+# Audio Alerts (Windows)
+pyttsx3>=2.90               # Text-to-speech for audio alerts
+
 # Image Processing (Optional - for OCR)
 # pytesseract>=0.3.10       # OCR for number plate recognition
 # easyocr>=1.7.0            # Alternative OCR engine

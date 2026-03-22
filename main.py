@@ -197,7 +197,7 @@ def run_tests():
     
     # Test 4: Model file exists
     print("\n[Test 4] YOLO model file...")
-    if os.path.exists("models/yolov8n.pt"):
+    if os.path.exists("models/yolov8n.pt") or os.path.exists("yolov8n.pt"):
         print("   ✅ Model file exists")
         tests_passed += 1
     else:
